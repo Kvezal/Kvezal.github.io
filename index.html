@@ -3,11 +3,203 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Портфолио</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+  <script src="js/picturefill.min.js"></script>
 </head>
 
 <body>
+  <header class="page-header">
 
+    <nav class="main-nav">
+      <div class="avatar">
+        <img src="http://placehold.it/100x100" alt="Фотография">
+      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">Навыки</li>
+        <li class="main-nav__item">Работы</li>
+        <li class="main-nav__item">Образование</li>
+        <li class="main-nav__item">Контакты</li>
+      </ul>
+      <button class="main-nav__toggle  main-nav__toggle--nojs" type="button"></button>
+    </nav>
+    <h1 class="title">Портфолио</h1>
+  </header>
+
+  <main class="page-main">
+    <section class="skills">
+      <h2 class="skills__title">Навыки</h2>
+      <ul class="skills__list">
+        <li class="skills__item">HTML;</li>
+        <li class="skills__item">CSS;</li>
+        <li class="skills__item">JS;</li>
+        <li class="skills__item">Canvas;</li>
+        <li class="skills__item">SVG;</li>
+        <li class="skills__item">AJAX;</li>
+        <li class="skills__item">Работа с Git через консоль;</li>
+        <li class="skills__item">Семантичная, кроссбраузерная и валидная верстка;</li>
+        <li class="skills__item">Владение Photoshop на уровне нарезки макета;</li>
+        <li class="skills__item">БЭМ;</li>
+        <li class="skills__item">LESS и SASS(предпочтителен SASS);</li>
+        <li class="skills__item">Gulp;</li>
+        <li class="skills__item">Построение адаптивных сеток;</li>
+        <li class="skills__item">Адаптивная графика (ретинизация и кадрирование изображений);</li>
+        <li class="skills__item">Оптимизация верстки;</li>
+      </ul>
+    </section>
+
+    <section class="gallery">
+      <h2 class="gallery__title">Работы</h2>
+      <ul class="gallery__nav">
+        <li class="gallery__nav-item">Фиксированная сетка</li>
+        <li class="gallery__nav-item">Адаптивная сетка</li>
+        <li class="gallery__nav-item">JavaScript</li>
+      </ul>
+
+      <div class="gallery-group">
+        <article class="gallery-item">
+          <h4 class="gallery-item__name">Gllacy</h4>
+          <a class="gallery-item__link" href="#">
+            <img src="http://placehold.it/300x423" alt="Gllacy" class="gallery-item__img">
+          </a>
+          <button class="gallery-item__button" type="button">Подробнее</button>
+        </article>
+        <article class="gallery-item">
+          <h4 class="gallery-item__name">Nerds</h4>
+          <a class="gallery-item__link" href="#">
+            <img src="http://placehold.it/300x423" alt="Nerds" class="gallery-item__img">
+          </a>
+          <button class="gallery-item__button" type="button">Подробнее</button>
+        </article>
+        <article class="gallery-item">
+          <h4 class="gallery-item__name">Sedona</h4>
+          <a class="gallery-item__link" href="#">
+            <img src="http://placehold.it/300x423" alt="Sedona" class="gallery-item__img">
+          </a>
+          <button class="gallery-item__button" type="button">Подробнее</button>
+        </article>
+        <article class="gallery-item">
+          <h4 class="gallery-item__name">Technomart</h4>
+          <a class="gallery-item__link" href="#">
+            <img src="http://placehold.it/300x423" alt="Technomart" class="gallery-item__img">
+          </a>
+          <button class="gallery-item__button" type="button">Подробнее</button>
+        </article>
+        <article class="gallery-item">
+          <h4 class="gallery-item__name">Device</h4>
+          <a class="gallery-item__link" href="#">
+            <img src="http://placehold.it/300x423" alt="Device" class="gallery-item__img">
+          </a>
+          <button class="gallery-item__button" type="button">Подробнее</button>
+        </article>
+        <article class="gallery-item">
+          <h4 class="gallery-item__name">Meetup</h4>
+          <a class="gallery-item__link" href="#">
+            <img src="http://placehold.it/300x423" alt="" class="gallery-item__img">
+          </a>
+          <button class="gallery-item__button" type="button">Подробнее</button>
+        </article>
+      </div>
+
+      <div class="gallery-group">
+        <article class="gallery-item">
+          <h4 class="gallery-item__name">Mishka</h4>
+          <a class="gallery-item__link" href="#">
+            <img src="http://placehold.it/300x423" alt="Mishka" class="gallery-item__img">
+          </a>
+          <button class="gallery-item__button" type="button">Подробнее</button>
+        </article>
+        <article class="gallery-item">
+          <h4 class="gallery-item__name">Pink</h4>
+          <a class="gallery-item__link" href="#">
+            <img src="http://placehold.it/300x423" alt="Pink" class="gallery-item__img">
+          </a>
+          <button class="gallery-item__button" type="button">Подробнее</button>
+        </article>
+        <article class="gallery-item">
+          <h4 class="gallery-item__name">Sedona</h4>
+          <a class="gallery-item__link" href="#">
+            <img src="http://placehold.it/300x423" alt="Sedona" class="gallery-item__img">
+          </a>
+          <button class="gallery-item__button" type="button">Подробнее</button>
+        </article>
+      </div>
+
+      <div class="gallery-group">
+        <article class="gallery-item">
+          <h4 class="gallery-item__name">Keksobooking</h4>
+          <a class="gallery-item__link" href="#">
+            <img src="http://placehold.it/300x423" alt="Keksobooking" class="gallery-item__img">
+          </a>
+          <button class="gallery-item__button" type="button">Подробнее</button>
+        </article>
+        <article class="gallery-item">
+          <h4 class="gallery-item__name">Kekstagram</h4>
+          <a class="gallery-item__link" href="#">
+            <img src="http://placehold.it/300x423" alt="Kekstagram" class="gallery-item__img">
+          </a>
+          <button class="gallery-item__button" type="button">Подробнее</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="education">
+      <h2 class="education__title">Образование</h2>
+      <ul class="education__list">
+        <li class="education__item">
+          Высшее техническое: "Ангарская Государственная Техническая Академия"<br>
+          Факультет: "Техническая кибернетика"<br>
+          Кафедра "Промышленная электроника и информационно-измерительная техника"<br>
+          (специалитет 2010 - 2015г.)
+        </li>
+        <li class="education__item">
+          Интенсив: "Базовый HTML и CSS"<br>
+          Дата прохождения: 16 января - 22 февраля 2017г.
+        </li>
+        <li class="education__item">
+          Интенсив: "Продвинутый HTML и CSS"<br>
+          Дата прохождения: 22 мая - 28 июня 2017г.
+        </li>
+        <li class="education__item">
+          Интенсив: "Базовый JavaScript"<br>
+          Дата прохождения: 8 августа - 20 сентября 2017г.
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p class="social">
+      <a class="social__link" href="#">Я в Вконтакте
+        <svg class="social__svg  social__svg--vk" width="22" height="24">
+          <use xlink:href="img/sprite.svg#vk"></use>
+        </svg>
+      </a>
+      <a class="social__link" href="#">Я в Телеграмме
+        <svg class="social__svg  social__svg--tl" width="15" height="29">
+          <use xlink:href="img/sprite.svg#tl"></use>
+        </svg>
+      </a>
+      <a class="social__link" href="#">Я в Скайпе
+        <svg class="social__svg  social__svg--sk" width="24" height="20">
+          <use xlink:href="img/sprite.svg#sk"></use>
+        </svg>
+      </a>
+    </p>
+  </footer>
+
+  <template id="similar-gallery-item" style="display: none">
+    <article class="gallery-item">
+      <h4 class="gallery-item__name"></h4>
+      <a class="gallery-item__link" href="#">
+        <img src="" alt="" class="gallery-item__img">
+      </a>
+      <button class="gallery-item__button" type="button">Подробнее</button>
+    </article>
+  </template>
 </body>
 
 </html>
