@@ -40,7 +40,7 @@
         <li class="skills__item">SVG;</li>
         <li class="skills__item">AJAX;</li>
         <li class="skills__item">Работа с Git через консоль;</li>
-        <li class="skills__item">Семантичная, кроссбраузерная и валидная верстка;</li>
+        <li class="skills__item">Семантичная, кроссбраузерная, валидная и pixel-perfect верстка;</li>
         <li class="skills__item">Владение Photoshop на уровне нарезки макета;</li>
         <li class="skills__item">БЭМ;</li>
         <li class="skills__item">LESS и SASS(предпочтителен SASS);</li>
@@ -53,97 +53,317 @@
 
     <section class="gallery">
       <h2 class="gallery__title">Работы</h2>
-      <ul class="gallery__nav">
-        <li class="gallery__nav-item">Фиксированная сетка</li>
-        <li class="gallery__nav-item">Адаптивная сетка</li>
-        <li class="gallery__nav-item">JavaScript</li>
-      </ul>
 
-      <div class="gallery-group">
+      <input class="gallery__tab-radio  gallery__tab-radio-1" type="radio" name="gallery__tab" id="fixed-grid" tabindex="-1" checked>
+      <input class="gallery__tab-radio  gallery__tab-radio-2" type="radio" name="gallery__tab" id="adaptive-grid" tabindex="-1">
+      <input class="gallery__tab-radio  gallery__tab-radio-3" type="radio" name="gallery__tab" id="javascript" tabindex="-1">
+
+      <section class="gallery__control">
+        <label class="gallery__tab-radio  gallery__tab-tab-1" for="fixed-grid" tabindex="0">Десктопные сайты</label>
+        <label class="gallery__tab-radio  gallery__tab-tab-2" for="adaptive-grid" tabindex="0">Адаптивные сайты</label>
+        <label class="gallery__tab-radio  gallery__tab-tab-3" for="javascript" tabindex="0">JavaScript</label>
+      </section>
+
+      <section class="gallery-group  gallery-group-1">
+        <h3 class="gallery-group__name  hidden">Десктопные сайты</h3>
+
         <article class="gallery-item">
           <h4 class="gallery-item__name">Gllacy</h4>
+          <input type="checkbox" id="gllacy" tabindex="-1">
           <a class="gallery-item__link" href="#">
-            <img src="http://placehold.it/300x423" alt="Gllacy" class="gallery-item__img">
+            <img src="img/gllacy@1x.jpg" srcset="img/gllacy@2x.jpg 2x" alt="Gllacy">
           </a>
-          <button class="gallery-item__button" type="button">Подробнее</button>
+          <label class="gallery-item__btn" for="gllacy" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
+            <p class="gallery-item__purpose">
+              Сверстать две страницы по PSD макету(главная, страница каталога со сливочным
+              мороженым).
+            </p>
+            <p class="gallery-item__description">
+              Верстка проекта реализована в соответствии с PSD-макетом, соблюден "Pixel-Perfect".
+              В процессе разработки использовался подход "Progressive Enhancement". Использовано
+              немного нативного JS для реализации всплывающего окна и подключения Яндекс карты
+              с помощью API (при выключеном JS, кнопка вызывающая появление модального окна,
+              будет осуществлять переход на отдельную страницу, а роль карты исполняет фоновое
+              изображение блока с картой). Произведена базовая оптимизация проекта(использованы
+              спрайты для растровых иконок и минифицирован CSS и JS). Выполнена резиновая верстка
+              в диападоне от 900 до 1200px.
+            </p>
+            <ul class="gallery-item__hashtag-list">
+              <li class="gallery-item__hashtag-item">Progressive Enhancement</li>
+              <li class="gallery-item__hashtag-item">Pixel-Perfect</li>
+              <li class="gallery-item__hashtag-item">JS</li>
+              <li class="gallery-item__hashtag-item">Базовая оптимизация</li>
+              <li class="gallery-item__hashtag-item">Валидный код</li>
+            </ul>
+          </div>
         </article>
+
         <article class="gallery-item">
           <h4 class="gallery-item__name">Nerds</h4>
+          <input type="checkbox" id="nerds" tabindex="-1">
           <a class="gallery-item__link" href="#">
-            <img src="http://placehold.it/300x423" alt="Nerds" class="gallery-item__img">
+            <img src="img/nerds@1x.jpg" srcset="img/nerds@2x.jpg 2x" alt="Nerds">
           </a>
-          <button class="gallery-item__button" type="button">Подробнее</button>
+          <label class="gallery-item__btn" for="nerds" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
+            <p class="gallery-item__purpose">
+              Сверстать две страницы по PSD макету(главная, магазин).
+            </p>
+            <p class="gallery-item__description">
+              Верстка проекта реализована в соответствии с PSD-макетом, соблюден "Pixel-Perfect".
+              В процессе разработки использовался подход "Progressive Enhancement". Использовано
+              немного нативного JS для реализации всплывающего окна и подключения Яндекс карты
+              с помощью API. Произведена базовая оптимизация проекта(использованы
+              спрайты для растровых иконок и минифицирован CSS и JS).
+            </p>
+            <ul class="gallery-item__hashtag-list">
+              <li class="gallery-item__hashtag-item">Progressive Enhancement</li>
+              <li class="gallery-item__hashtag-item">Pixel-Perfect</li>
+              <li class="gallery-item__hashtag-item">JS</li>
+              <li class="gallery-item__hashtag-item">Базовая оптимизация</li>
+              <li class="gallery-item__hashtag-item">Валидный код</li>
+            </ul>
+          </div>
         </article>
-        <article class="gallery-item">
-          <h4 class="gallery-item__name">Sedona</h4>
-          <a class="gallery-item__link" href="#">
-            <img src="http://placehold.it/300x423" alt="Sedona" class="gallery-item__img">
-          </a>
-          <button class="gallery-item__button" type="button">Подробнее</button>
-        </article>
+
         <article class="gallery-item">
           <h4 class="gallery-item__name">Technomart</h4>
+          <input type="checkbox" id="technomart"  tabindex="-1">
           <a class="gallery-item__link" href="#">
-            <img src="http://placehold.it/300x423" alt="Technomart" class="gallery-item__img">
+            <img src="img/technomart@1x.jpg" srcset="img/technomart@2x.jpg 2x" alt="Technomart">
           </a>
-          <button class="gallery-item__button" type="button">Подробнее</button>
+          <label class="gallery-item__btn" for="technomart" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
+            <p class="gallery-item__purpose">
+              Сверстать две страницы по PSD макету(главная, каталог).
+            </p>
+            <p class="gallery-item__description">
+              Верстка проекта реализована в соответствии с PSD-макетом, соблюден "Pixel-Perfect".
+              В процессе разработки использовался подход "Progressive Enhancement". Использовано
+              немного нативного JS для реализации всплывающего окна и подключения Яндекс карты
+              с помощью API. Произведена базовая оптимизация проекта(использованы
+              спрайты для растровых иконок и минифицирован CSS и JS).
+            </p>
+            <ul class="gallery-item__hashtag-list">
+              <li class="gallery-item__hashtag-item">Progressive Enhancement</li>
+              <li class="gallery-item__hashtag-item">Pixel-Perfect</li>
+              <li class="gallery-item__hashtag-item">JS</li>
+              <li class="gallery-item__hashtag-item">Базовая оптимизация</li>
+              <li class="gallery-item__hashtag-item">Валидный код</li>
+            </ul>
+          </div>
         </article>
-        <article class="gallery-item">
-          <h4 class="gallery-item__name">Device</h4>
-          <a class="gallery-item__link" href="#">
-            <img src="http://placehold.it/300x423" alt="Device" class="gallery-item__img">
-          </a>
-          <button class="gallery-item__button" type="button">Подробнее</button>
-        </article>
-        <article class="gallery-item">
-          <h4 class="gallery-item__name">Meetup</h4>
-          <a class="gallery-item__link" href="#">
-            <img src="http://placehold.it/300x423" alt="" class="gallery-item__img">
-          </a>
-          <button class="gallery-item__button" type="button">Подробнее</button>
-        </article>
-      </div>
 
-      <div class="gallery-group">
-        <article class="gallery-item">
-          <h4 class="gallery-item__name">Mishka</h4>
-          <a class="gallery-item__link" href="#">
-            <img src="http://placehold.it/300x423" alt="Mishka" class="gallery-item__img">
-          </a>
-          <button class="gallery-item__button" type="button">Подробнее</button>
-        </article>
-        <article class="gallery-item">
-          <h4 class="gallery-item__name">Pink</h4>
-          <a class="gallery-item__link" href="#">
-            <img src="http://placehold.it/300x423" alt="Pink" class="gallery-item__img">
-          </a>
-          <button class="gallery-item__button" type="button">Подробнее</button>
-        </article>
         <article class="gallery-item">
           <h4 class="gallery-item__name">Sedona</h4>
+          <input type="checkbox" id="sedona"  tabindex="-1">
           <a class="gallery-item__link" href="#">
-            <img src="http://placehold.it/300x423" alt="Sedona" class="gallery-item__img">
+            <img src="img/sedona@1x.jpg" srcset="img/sedona@2x.jpg 2x" alt="Sedona">
           </a>
-          <button class="gallery-item__button" type="button">Подробнее</button>
+          <label class="gallery-item__btn" for="sedona" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
+            <p class="gallery-item__purpose">
+              Сверстать две страницы по PSD макету(главная, гостиницs).
+            </p>
+            <p class="gallery-item__description">
+              Верстка проекта реализована в соответствии с PSD-макетом, соблюден "Pixel-Perfect".
+              В процессе разработки использовался подход "Progressive Enhancement". Использовано
+              немного нативного JS для реализации всплывающего окна и подключения Google карты
+              с помощью API. Произведена базовая оптимизация проекта(использованы
+              спрайты для растровых иконок и минифицирован CSS и JS). Выполнена резиновая верстка
+              в диападоне от 768 до 1200px.
+            </p>
+            <ul class="gallery-item__hashtag-list">
+              <li class="gallery-item__hashtag-item">Progressive Enhancement</li>
+              <li class="gallery-item__hashtag-item">Pixel-Perfect</li>
+              <li class="gallery-item__hashtag-item">JS</li>
+              <li class="gallery-item__hashtag-item">Базовая оптимизация</li>
+              <li class="gallery-item__hashtag-item">Валидный код</li>
+            </ul>
+          </div>
         </article>
-      </div>
 
-      <div class="gallery-group">
+        <article class="gallery-item">
+          <h4 class="gallery-item__name">Device</h4>
+          <input type="checkbox" id="device"  tabindex="-1">
+          <a class="gallery-item__link" href="#">
+            <img src="img/device@1x.jpg" srcset="img/device@2x.jpg 2x" alt="Device">
+          </a>
+          <label class="gallery-item__btn" for="device" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
+            <p class="gallery-item__purpose">
+              Сверстать две страницы по PSD макету(главная, страница каталога товаров - "Моноподы для селфи").
+            </p>
+            <p class="gallery-item__description">
+              Верстка проекта реализована в соответствии с PSD-макетом, соблюден "Pixel-Perfect".
+              В процессе разработки использовался подход "Progressive Enhancement". Использовано
+              немного нативного JS для реализации всплывающего окна и подключения Яндекс карты
+              с помощью API (при выключеном JS, кнопка вызывающая появление модального окна,
+              будет осуществлять переход на отдельную страницу, а роль карты исполняет фоновое
+              изображение блока с картой). Произведена базовая оптимизация проекта(использованы
+              спрайты для растровых иконок и минифицирован CSS и JS). Первая попытка работы с
+              CSS-препроцессором и сборщиком проектов(в данном случае использовались
+              препроцессор LESS и сборщик Gulp).
+            </p>
+            <ul class="gallery-item__hashtag-list">
+              <li class="gallery-item__hashtag-item">LESS</li>
+              <li class="gallery-item__hashtag-item">Gulp</li>
+              <li class="gallery-item__hashtag-item">Progressive Enhancement</li>
+              <li class="gallery-item__hashtag-item">Pixel-Perfect</li>
+              <li class="gallery-item__hashtag-item">JS</li>
+              <li class="gallery-item__hashtag-item">Базовая оптимизация</li>
+              <li class="gallery-item__hashtag-item">Валидный код</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="gallery-group  gallery-group-2">
+        <h3 class="gallery-group__name  hidden">Адаптивные сайты</h3>
+
+        <article class="gallery-item">
+          <h4 class="gallery-item__name">Mishka</h4>
+          <input type="checkbox" id="mishka"  tabindex="-1">
+          <a class="gallery-item__link" href="#">
+            <img src="img/mishka@1x.jpg" srcset="img/mishka@2x.jpg 2x" alt="Mishka">
+          </a>
+          <label class="gallery-item__btn" for="mishka" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
+            <p class="gallery-item__purpose">
+              Сверстать адаптивно три страницы по PSD макету (главная, страница с формой для заказов,
+              страница каталога товаров) для трех разрешений экранов(320px, 768px и 1150px);
+            </p>
+            <p class="gallery-item__description">
+              Верстка проекта реализована в соответствии с PSD-макетом, соблюден "Pixel-Perfect".
+              В процессе разработки использовались подход "Graceful Degradation" и "Mobile First",
+              также использовалась БЭМ-методология.
+              Использовано немного нативного JS для реализации всплывающего окна, меню (в мобильной
+              версии сайта) и подключения Яндекс карты с помощью API (при выключеном JS в качестве
+              карты выступает фоновое изображение блока к которому подключается карта).
+              Сделана раскадровка и ретинизация изображений с целью ускорения загрузки страницы, чтобы
+              качество изображений было одинакого высоким как на ретиновых, так и на обычных экранах.
+              Произведена базовая сборка и оптимизация проекта с помощью Gulp (оптимизация графики,
+              SVG-спрайты, сборка CSS из SASS, минификация JS и собранного CSS, автоприфексование
+              свойств и группировка media-выражений).
+            </p>
+            <ul class="gallery-item__hashtag-list">
+              <li class="gallery-item__hashtag-item">Adaptive</li>
+              <li class="gallery-item__hashtag-item">Retina</li>
+              <li class="gallery-item__hashtag-item">Кадрирование изображений</li>
+              <li class="gallery-item__hashtag-item">SASS</li>
+              <li class="gallery-item__hashtag-item">SVG</li>
+              <li class="gallery-item__hashtag-item">Gulp</li>
+              <li class="gallery-item__hashtag-item">БЭМ</li>
+              <li class="gallery-item__hashtag-item">Graceful Degradation</li>
+              <li class="gallery-item__hashtag-item">Pixel-Perfect</li>
+              <li class="gallery-item__hashtag-item">JS</li>
+              <li class="gallery-item__hashtag-item">Оптимизация</li>
+              <li class="gallery-item__hashtag-item">Валидный код</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="gallery-item">
+          <h4 class="gallery-item__name">Pink</h4>
+          <input type="checkbox" id="pink"  tabindex="-1">
+          <a class="gallery-item__link" href="#">
+            <img src="img/pink@1x.jpg" srcset="img/pink@2x.jpg 2x" alt="Pink">
+          </a>
+          <label class="gallery-item__btn" for="pink" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
+            <p class="gallery-item__purpose">
+              Сверстать адаптивно три страницы по PSD макету (главная, конкурс - страница с формой
+              для отправки своих впечатлений, страница с отправленными фотографиями) для трех разрешений
+              экранов(320px, 660px и 960px);
+            </p>
+            <p class="gallery-item__description">
+              Верстка проекта реализована в соответствии с PSD-макетом, соблюден "Pixel-Perfect".
+              В процессе разработки использовались подход "Progressive Enhancement" и "Mobile First",
+              также использовалась БЭМ-методология.
+              Использовано немного нативного JS для реализации всплывающего окна, меню (в мобильной
+              версии сайта) и подключения Яндекс карты с помощью API (при выключеном JS в качестве
+              карты выступает фоновое изображение блока к которому подключается карта).
+              Сделана раскадровка и ретинизация изображений с целью ускорения загрузки страницы, чтобы
+              качество изображений было одинакого высоким как на ретиновых, так и на обычных экранах.
+              Произведена базовая сборка и оптимизация проекта с помощью Gulp (оптимизация графики,
+              SVG-спрайты, сборка CSS из SASS, минификация JS и собранного CSS, автоприфексование
+              свойств и группировка media-выражений).
+            </p>
+            <ul class="gallery-item__hashtag-list">
+              <li class="gallery-item__hashtag-item">Adaptive</li>
+              <li class="gallery-item__hashtag-item">Retina</li>
+              <li class="gallery-item__hashtag-item">Кадрирование изображений</li>
+              <li class="gallery-item__hashtag-item">SASS</li>
+              <li class="gallery-item__hashtag-item">SVG</li>
+              <li class="gallery-item__hashtag-item">Gulp</li>
+              <li class="gallery-item__hashtag-item">БЭМ</li>
+              <li class="gallery-item__hashtag-item">Progressive Enhancement</li>
+              <li class="gallery-item__hashtag-item">Pixel-Perfect</li>
+              <li class="gallery-item__hashtag-item">JS</li>
+              <li class="gallery-item__hashtag-item">Оптимизация</li>
+              <li class="gallery-item__hashtag-item">Валидный код</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="gallery-group  gallery-group-3">
+        <h3 class="gallery-group__name  hidden">JavaScript</h3>
+
         <article class="gallery-item">
           <h4 class="gallery-item__name">Keksobooking</h4>
+          <input type="checkbox" id="keksobooking"  tabindex="-1">
           <a class="gallery-item__link" href="#">
-            <img src="http://placehold.it/300x423" alt="Keksobooking" class="gallery-item__img">
+            <img src="img/keksobooking@1x.jpg" srcset="img/keksobooking@2x.jpg 2x" alt="Keksobooking">
           </a>
-          <button class="gallery-item__button" type="button">Подробнее</button>
+          <label class="gallery-item__btn" for="keksobooking" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
+            <p class="gallery-item__purpose">
+              Привести функционал проекта в соответствии с
+              <a class="gallery-item__purpose-link" href="tasks/specification-keksobooking.md">техническим заданием</a>
+            </p>
+            <p class="gallery-item__description">
+              Кексобукинг — сервис размещения объявлений о сдаче в аренду недвижимости в центре Токио.
+              Пользователям предоставлется возможность размещать объявления о своей недвижимости или
+              просматривать уже размещенные объявления.
+            </p>
+            <ul class="gallery-item__hashtag-list">
+              <li class="gallery-item__hashtag-item">JS</li>
+              <li class="gallery-item__hashtag-item">ECMAScript 5</li>
+              <li class="gallery-item__hashtag-item">Функциональный стиль</li>
+              <li class="gallery-item__hashtag-item">Модульность</li>
+              <li class="gallery-item__hashtag-item">AJAX</li>
+            </ul>
+          </div>
         </article>
+
         <article class="gallery-item">
           <h4 class="gallery-item__name">Kekstagram</h4>
+          <input type="checkbox" id="kekstagram"  tabindex="-1">
           <a class="gallery-item__link" href="#">
-            <img src="http://placehold.it/300x423" alt="Kekstagram" class="gallery-item__img">
+            <img src="img/kekstagram@1x.jpg" srcset="img/kekstagram@2x.jpg 2x" alt="Kekstagram">
           </a>
-          <button class="gallery-item__button" type="button">Подробнее</button>
+          <label class="gallery-item__btn" for="kekstagram" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
+            <p class="gallery-item__purpose">
+              Привести функционал проекта в соответствии с
+              <a class="gallery-item__purpose-link" href="tasks/specification-kekstagram.md">техническим заданием</a>
+            </p>
+            <p class="gallery-item__description">
+              Кекстаграм — сервис просмотра изображений. Пользователям предоставлена возможность загружать
+              свои фотографии или просматривать фотографии, загруженные ранее другими пользователями.
+            </p>
+            <ul class="gallery-item__hashtag-list">
+              <li class="gallery-item__hashtag-item">JS</li>
+              <li class="gallery-item__hashtag-item">ECMAScript 5</li>
+              <li class="gallery-item__hashtag-item">Функциональный стиль</li>
+              <li class="gallery-item__hashtag-item">Модульность</li>
+              <li class="gallery-item__hashtag-item">AJAX</li>
+            </ul>
+          </div>
         </article>
-      </div>
+      </section>
     </section>
 
     <section class="education">
@@ -153,19 +373,33 @@
           Высшее техническое: "Ангарская Государственная Техническая Академия"<br>
           Факультет: "Техническая кибернетика"<br>
           Кафедра "Промышленная электроника и информационно-измерительная техника"<br>
-          (специалитет 2010 - 2015г.)
+          (специалитет 2010 - 2015г., очная форма обучения)
         </li>
         <li class="education__item">
           Интенсив: "Базовый HTML и CSS"<br>
-          Дата прохождения: 16 января - 22 февраля 2017г.
+          Дата прохождения: 16 января - 22 февраля 2017г.<br>
+          Соответствия критериям: 100%
         </li>
         <li class="education__item">
           Интенсив: "Продвинутый HTML и CSS"<br>
-          Дата прохождения: 22 мая - 28 июня 2017г.
+          Дата прохождения: 22 мая - 28 июня 2017г.<br>
+          Соответствия критериям: 100%
         </li>
         <li class="education__item">
           Интенсив: "Базовый JavaScript"<br>
-          Дата прохождения: 8 августа - 20 сентября 2017г.
+          Дата прохождения: 8 августа - 20 сентября 2017г.<br>
+          Соответствия критериям: 100%
+        </li>
+      </ul>
+      <ul class="education__certificate-list">
+        <li class="education__certificate-item">
+          <img src="img/basicHTML&CSS@1x.jpg" srcset="img/basicHTML&CSS@2x.jpg 2x" alt="Сертификат 'Базовый HTML &amp; CSS'">
+        </li>
+        <li class="education__certificate-item">
+          <img src="img/advancedHTML&CSS@1x.jpg" srcset="img/advancedHTML&CSS@2x.jpg 2x" alt="Сертификат 'Продвинутый HTML &amp; CSS'">
+        </li>
+        <li class="education__certificate-item">
+          <img src="img/basicJS@1x.jpg" srcset="img/basicJS@2x.jpg 2x" alt="Сертификат 'Базовый JavaScript'">
         </li>
       </ul>
     </section>
@@ -197,7 +431,7 @@
       <a class="gallery-item__link" href="#">
         <img src="" alt="" class="gallery-item__img">
       </a>
-      <button class="gallery-item__button" type="button">Подробнее</button>
+      <a class="gallery-item__description" href="#">Подробнее</a>
     </article>
   </template>
 </body>
