@@ -6,9 +6,9 @@
   <title>Портфолио</title>
   <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="js/svg4everybody.min.js"></script>
+  <script src="js-min/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>
-  <script src="js/picturefill.min.js"></script>
+  <script src="js-min/picturefill.min.js"></script>
 </head>
 
 <body>
@@ -66,22 +66,21 @@
       <input class="gallery__tab-radio  gallery__tab-radio-3" type="radio" name="gallery__tab" id="javascript" tabindex="-1">
 
       <div class="gallery__control">
-        <label class="gallery__tab-radio  gallery__tab-tab-1" for="fixed-grid" tabindex="0">Десктопные сайты</label>
-        <label class="gallery__tab-radio  gallery__tab-tab-2" for="adaptive-grid" tabindex="0">Адаптивные сайты</label>
-        <label class="gallery__tab-radio  gallery__tab-tab-3" for="javascript" tabindex="0">SPA</label>
+        <label class="gallery__tab-label  gallery__tab-label-1" for="fixed-grid" tabindex="0">Десктопные сайты</label>
+        <label class="gallery__tab-label  gallery__tab-label-2" for="adaptive-grid" tabindex="0">Адаптивные сайты</label>
+        <label class="gallery__tab-label  gallery__tab-label-3" for="javascript" tabindex="0">SPA</label>
       </div>
 
-      <section class="gallery-group  gallery-group--1">
+      <section class="gallery__group  gallery__group--1">
         <h3 class="visually-hidden">Десктопные сайты</h3>
 
         <article class="gallery-item">
           <h4 class="gallery-item__name">Gllacy</h4>
-          <input type="checkbox" id="gllacy" tabindex="-1">
+          <input class="gallery-item__check" type="checkbox" id="gllacy" tabindex="-1">
           <a class="gallery-item__link" href="#" target="_blank">
             <img src="img/gllacy@1x.jpg" srcset="img/gllacy@2x.jpg 2x" alt="Gllacy">
           </a>
-          <label class="gallery-item__btn" for="gllacy" tabindex="0">Подробнее</label>
-          <div class="gallery-item__info">
+          <div class="gallery-item__bottom">
             <b class="gallery-item__subtitle">Хэш-теги:</b>
             <ul class="gallery-item__hashtag-list">
               <li class="gallery-item__hashtag-item">Progressive Enhancement</li>
@@ -90,6 +89,9 @@
               <li class="gallery-item__hashtag-item">Базовая оптимизация</li>
               <li class="gallery-item__hashtag-item">Валидный код</li>
             </ul>
+          </div>
+          <label class="gallery-item__btn" for="gllacy" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
             <p class="gallery-item__purpose">
               <b class="gallery-item__subtitle">Задача:</b>
               Сверстать две страницы по PSD макету(главная, страница каталога со сливочным
@@ -111,12 +113,11 @@
 
         <article class="gallery-item">
           <h4 class="gallery-item__name">Nerds</h4>
-          <input type="checkbox" id="nerds" tabindex="-1">
+          <input class="gallery-item__check" type="checkbox" id="nerds" tabindex="-1">
           <a class="gallery-item__link" href="#" target="_blank">
             <img src="img/nerds@1x.jpg" srcset="img/nerds@2x.jpg 2x" alt="Nerds">
           </a>
-          <label class="gallery-item__btn" for="nerds" tabindex="0">Подробнее</label>
-          <div class="gallery-item__info">
+          <div class="gallery-item__bottom">
             <b class="gallery-item__subtitle">Хэш-теги:</b>
             <ul class="gallery-item__hashtag-list">
               <li class="gallery-item__hashtag-item">Progressive Enhancement</li>
@@ -125,6 +126,9 @@
               <li class="gallery-item__hashtag-item">Базовая оптимизация</li>
               <li class="gallery-item__hashtag-item">Валидный код</li>
             </ul>
+          </div>
+          <label class="gallery-item__btn" for="nerds" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
             <p class="gallery-item__purpose">
               <b class="gallery-item__subtitle">Задача:</b>
               Сверстать две страницы по PSD макету(главная, магазин).
@@ -142,12 +146,11 @@
 
         <article class="gallery-item">
           <h4 class="gallery-item__name">Technomart</h4>
-          <input type="checkbox" id="technomart"  tabindex="-1">
+          <input class="gallery-item__check" type="checkbox" id="technomart"  tabindex="-1">
           <a class="gallery-item__link" href="#" target="_blank">
             <img src="img/technomart@1x.jpg" srcset="img/technomart@2x.jpg 2x" alt="Technomart">
           </a>
-          <label class="gallery-item__btn" for="technomart" tabindex="0">Подробнее</label>
-          <div class="gallery-item__info">
+          <div class="gallery-item__bottom">
             <b class="gallery-item__subtitle">Хэш-теги:</b>
             <ul class="gallery-item__hashtag-list">
               <li class="gallery-item__hashtag-item">Progressive Enhancement</li>
@@ -156,6 +159,9 @@
               <li class="gallery-item__hashtag-item">Базовая оптимизация</li>
               <li class="gallery-item__hashtag-item">Валидный код</li>
             </ul>
+          </div>
+          <label class="gallery-item__btn" for="technomart" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
             <p class="gallery-item__purpose">
               <b class="gallery-item__subtitle">Задача:</b>
               Сверстать две страницы по PSD макету(главная, каталог).
@@ -173,12 +179,11 @@
 
         <article class="gallery-item">
           <h4 class="gallery-item__name">Sedona</h4>
-          <input type="checkbox" id="sedona"  tabindex="-1">
+          <input class="gallery-item__check" type="checkbox" id="sedona"  tabindex="-1">
           <a class="gallery-item__link" href="#" target="_blank">
             <img src="img/sedona@1x.jpg" srcset="img/sedona@2x.jpg 2x" alt="Sedona">
           </a>
-          <label class="gallery-item__btn" for="sedona" tabindex="0">Подробнее</label>
-          <div class="gallery-item__info">
+          <div class="gallery-item__bottom">
             <b class="gallery-item__subtitle">Хэш-теги:</b>
             <ul class="gallery-item__hashtag-list">
               <li class="gallery-item__hashtag-item">Progressive Enhancement</li>
@@ -187,6 +192,9 @@
               <li class="gallery-item__hashtag-item">Базовая оптимизация</li>
               <li class="gallery-item__hashtag-item">Валидный код</li>
             </ul>
+          </div>
+          <label class="gallery-item__btn" for="sedona" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
             <p class="gallery-item__purpose">
               <b class="gallery-item__subtitle">Задача:</b>
               Сверстать две страницы по PSD макету(главная, гостиницs).
@@ -205,12 +213,11 @@
 
         <article class="gallery-item">
           <h4 class="gallery-item__name">Device</h4>
-          <input type="checkbox" id="device"  tabindex="-1">
+          <input class="gallery-item__check" type="checkbox" id="device"  tabindex="-1">
           <a class="gallery-item__link" href="#" target="_blank">
             <img src="img/device@1x.jpg" srcset="img/device@2x.jpg 2x" alt="Device">
           </a>
-          <label class="gallery-item__btn" for="device" tabindex="0">Подробнее</label>
-          <div class="gallery-item__info">
+          <div class="gallery-item__bottom">
             <b class="gallery-item__subtitle">Хэш-теги:</b>
             <ul class="gallery-item__hashtag-list">
               <li class="gallery-item__hashtag-item">LESS</li>
@@ -221,6 +228,9 @@
               <li class="gallery-item__hashtag-item">Базовая оптимизация</li>
               <li class="gallery-item__hashtag-item">Валидный код</li>
             </ul>
+          </div>
+          <label class="gallery-item__btn" for="device" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
             <p class="gallery-item__purpose">
               <b class="gallery-item__subtitle">Задача:</b>
               Сверстать две страницы по PSD макету(главная, страница каталога товаров - "Моноподы для селфи").
@@ -241,17 +251,16 @@
         </article>
       </section>
 
-      <section class="gallery-group  gallery-group--2">
+      <section class="gallery__group  gallery__group--2">
         <h3 class="visually-hidden">Адаптивные сайты</h3>
 
         <article class="gallery-item">
           <h4 class="gallery-item__name">Mishka</h4>
-          <input type="checkbox" id="mishka"  tabindex="-1">
+          <input class="gallery-item__check" type="checkbox" id="mishka"  tabindex="-1">
           <a class="gallery-item__link" href="#" target="_blank">
             <img src="img/mishka@1x.jpg" srcset="img/mishka@2x.jpg 2x" alt="Mishka">
           </a>
-          <label class="gallery-item__btn" for="mishka" tabindex="0">Подробнее</label>
-          <div class="gallery-item__info">
+          <div class="gallery-item__bottom">
             <b class="gallery-item__subtitle">Хэш-теги:</b>
             <ul class="gallery-item__hashtag-list">
               <li class="gallery-item__hashtag-item">Adaptive</li>
@@ -267,6 +276,9 @@
               <li class="gallery-item__hashtag-item">Оптимизация</li>
               <li class="gallery-item__hashtag-item">Валидный код</li>
             </ul>
+          </div>
+          <label class="gallery-item__btn" for="mishka" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
             <p class="gallery-item__purpose">
               <b class="gallery-item__subtitle">Задача:</b>
               Сверстать адаптивно три страницы по PSD макету (главная, страница с формой для заказов,
@@ -291,12 +303,11 @@
 
         <article class="gallery-item">
           <h4 class="gallery-item__name">Pink</h4>
-          <input type="checkbox" id="pink"  tabindex="-1">
+          <input class="gallery-item__check" type="checkbox" id="pink"  tabindex="-1">
           <a class="gallery-item__link" href="#" target="_blank">
             <img src="img/pink@1x.jpg" srcset="img/pink@2x.jpg 2x" alt="Pink">
           </a>
-          <label class="gallery-item__btn" for="pink" tabindex="0">Подробнее</label>
-          <div class="gallery-item__info">
+          <div class="gallery-item__bottom">
             <b class="gallery-item__subtitle">Хэш-теги:</b>
             <ul class="gallery-item__hashtag-list">
               <li class="gallery-item__hashtag-item">Adaptive</li>
@@ -312,6 +323,9 @@
               <li class="gallery-item__hashtag-item">Оптимизация</li>
               <li class="gallery-item__hashtag-item">Валидный код</li>
             </ul>
+          </div>
+          <label class="gallery-item__btn" for="pink" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
             <p class="gallery-item__purpose">
               <b class="gallery-item__subtitle">Задача:</b>
               Сверстать адаптивно три страницы по PSD макету (главная, конкурс - страница с формой
@@ -336,17 +350,16 @@
         </article>
       </section>
 
-      <section class="gallery-group  gallery-group--3">
+      <section class="gallery__group  gallery__group--3">
         <h3 class="visually-hidden">SPA</h3>
 
         <article class="gallery-item">
           <h4 class="gallery-item__name">Keksobooking</h4>
-          <input type="checkbox" id="keksobooking"  tabindex="-1">
+          <input class="gallery-item__check" type="checkbox" id="keksobooking"  tabindex="-1">
           <a class="gallery-item__link" href="#" target="_blank">
             <img src="img/keksobooking@1x.jpg" srcset="img/keksobooking@2x.jpg 2x" alt="Keksobooking">
           </a>
-          <label class="gallery-item__btn" for="keksobooking" tabindex="0">Подробнее</label>
-          <div class="gallery-item__info">
+          <div class="gallery-item__bottom">
             <b class="gallery-item__subtitle">Хэш-теги:</b>
             <ul class="gallery-item__hashtag-list">
               <li class="gallery-item__hashtag-item">JS</li>
@@ -356,6 +369,9 @@
               <li class="gallery-item__hashtag-item">AJAX</li>
               <li class="gallery-item__hashtag-item">SPA</li>
             </ul>
+          </div>
+          <label class="gallery-item__btn" for="keksobooking" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
             <p class="gallery-item__purpose">
               <b class="gallery-item__subtitle">Задача:</b>
               Привести функционал проекта в соответствии с
@@ -387,12 +403,11 @@
 
         <article class="gallery-item">
           <h4 class="gallery-item__name">Kekstagram</h4>
-          <input type="checkbox" id="kekstagram"  tabindex="-1">
+          <input class="gallery-item__check" type="checkbox" id="kekstagram"  tabindex="-1">
           <a class="gallery-item__link" href="#" target="_blank">
             <img src="img/kekstagram@1x.jpg" srcset="img/kekstagram@2x.jpg 2x" alt="Kekstagram">
           </a>
-          <label class="gallery-item__btn" for="kekstagram" tabindex="0">Подробнее</label>
-          <div class="gallery-item__info">
+          <div class="gallery-item__bottom">
             <b class="gallery-item__subtitle">Хэш-теги:</b>
             <ul class="gallery-item__hashtag-list">
               <li class="gallery-item__hashtag-item">JS</li>
@@ -402,6 +417,9 @@
               <li class="gallery-item__hashtag-item">AJAX</li>
               <li class="gallery-item__hashtag-item">SPA</li>
             </ul>
+          </div>
+          <label class="gallery-item__btn" for="kekstagram" tabindex="0">Подробнее</label>
+          <div class="gallery-item__info">
             <p class="gallery-item__purpose">
               <b class="gallery-item__subtitle">Задача:</b>
               Привести функционал проекта в соответствии с
@@ -446,27 +464,25 @@
           Интенсив: "Базовый HTML и CSS"<br>
           Дата прохождения: 16 января - 22 февраля 2017г.<br>
           Соответствия критериям: 100%
+          <a class="education__wrapper" href="documents/basicHTML&CSS.pdf">
+            <img src="img/basicHTML&CSS@1x.jpg" srcset="img/basicHTML&CSS@2x.jpg 2x" alt="Сертификат 'Базовый HTML &amp; CSS'">
+          </a>
         </li>
         <li class="education__item">
           Интенсив: "Продвинутый HTML и CSS"<br>
           Дата прохождения: 22 мая - 28 июня 2017г.<br>
           Соответствия критериям: 100%
+          <a class="education__wrapper" href="documents/advancedHTML&CSS.pdf">
+            <img src="img/advancedHTML&CSS@1x.jpg" srcset="img/advancedHTML&CSS@2x.jpg 2x" alt="Сертификат 'Продвинутый HTML &amp; CSS'">
+          </a>
         </li>
         <li class="education__item">
           Интенсив: "Базовый JavaScript"<br>
           Дата прохождения: 8 августа - 20 сентября 2017г.<br>
           Соответствия критериям: 100%
-        </li>
-      </ul>
-      <ul class="education__certificate-list">
-        <li class="education__certificate-item">
-          <img src="img/basicHTML&CSS@1x.jpg" srcset="img/basicHTML&CSS@2x.jpg 2x" alt="Сертификат 'Базовый HTML &amp; CSS'">
-        </li>
-        <li class="education__certificate-item">
-          <img src="img/advancedHTML&CSS@1x.jpg" srcset="img/advancedHTML&CSS@2x.jpg 2x" alt="Сертификат 'Продвинутый HTML &amp; CSS'">
-        </li>
-        <li class="education__certificate-item">
-          <img src="img/basicJS@1x.jpg" srcset="img/basicJS@2x.jpg 2x" alt="Сертификат 'Базовый JavaScript'">
+          <a class="education__wrapper" href="documents/basicJS.pdf">
+            <img src="img/basicJS@1x.jpg" srcset="img/basicJS@2x.jpg 2x" alt="Сертификат 'Базовый JavaScript'">
+          </a>
         </li>
       </ul>
     </section>
@@ -480,13 +496,13 @@
         </svg>
       </a>
       <a class="social__link" href="#">Я в Телеграмме
-        <svg class="social__svg  social__svg--tl" width="15" height="29">
-          <use xlink:href="img/sprite.svg#tl"></use>
+        <svg class="social__svg  social__svg--tg" width="15" height="29">
+          <use xlink:href="img/sprite.svg#tg"></use>
         </svg>
       </a>
-      <a class="social__link" href="#">Я в Скайпе
-        <svg class="social__svg  social__svg--sk" width="24" height="20">
-          <use xlink:href="img/sprite.svg#sk"></use>
+      <a class="social__link" href="#">Я на Github
+        <svg class="social__svg  social__svg--gh" width="24" height="20">
+          <use xlink:href="img/sprite.svg#gh"></use>
         </svg>
       </a>
     </p>
