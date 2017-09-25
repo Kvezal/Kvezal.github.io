@@ -1,4 +1,11 @@
 .avatar {
-  width: 100px;
-  height: 100px;
+  display: none;
+}
+
+@include MQ(M) {
+  .avatar {
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
 }
