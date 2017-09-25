@@ -2,9 +2,18 @@ body {
   margin: 0;
 
   font-family: $font-primary;
-  color: $primary-color;
+  color: $fifth-color;
+  background-image: repeating-linear-gradient(135deg, rgba($secondary-color, .5) 5px, rgba($third-color, .5) 6px, rgba($secondary-color, .5) 7px, rgba($secondary-color, .5) 12px);
 }
 
 img {
   width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }

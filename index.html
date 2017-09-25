@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Портфолио</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>
@@ -13,7 +13,6 @@
 
 <body>
   <header class="page-header">
-
     <nav class="main-nav">
       <div class="avatar">
         <img src="http://placehold.it/100x100" alt="Фотография">
@@ -26,10 +25,10 @@
       </ul>
       <button class="main-nav__toggle  main-nav__toggle--nojs" type="button"></button>
     </nav>
-    <h1 class="title">Портфолио</h1>
+    <h1 class="visually-hidden">Портфолио</h1>
   </header>
 
-  <main class="page-main">
+  <main>
     <section class="skills">
       <h2 class="skills__title">Навыки</h2>
       <ul class="skills__list">
@@ -61,11 +60,11 @@
       <div class="gallery__control">
         <label class="gallery__tab-radio  gallery__tab-tab-1" for="fixed-grid" tabindex="0">Десктопные сайты</label>
         <label class="gallery__tab-radio  gallery__tab-tab-2" for="adaptive-grid" tabindex="0">Адаптивные сайты</label>
-        <label class="gallery__tab-radio  gallery__tab-tab-3" for="javascript" tabindex="0">JavaScript</label>
+        <label class="gallery__tab-radio  gallery__tab-tab-3" for="javascript" tabindex="0">SPA</label>
       </div>
 
-      <section class="gallery-group  gallery-group-1">
-        <h3 class="gallery-group__name  hidden">Десктопные сайты</h3>
+      <section class="gallery-group  gallery-group--1">
+        <h3 class="visually-hidden">Десктопные сайты</h3>
 
         <article class="gallery-item">
           <h4 class="gallery-item__name">Gllacy</h4>
@@ -234,8 +233,8 @@
         </article>
       </section>
 
-      <section class="gallery-group  gallery-group-2">
-        <h3 class="gallery-group__name  hidden">Адаптивные сайты</h3>
+      <section class="gallery-group  gallery-group--2">
+        <h3 class="visually-hidden">Адаптивные сайты</h3>
 
         <article class="gallery-item">
           <h4 class="gallery-item__name">Mishka</h4>
@@ -329,8 +328,8 @@
         </article>
       </section>
 
-      <section class="gallery-group  gallery-group-3">
-        <h3 class="gallery-group__name  hidden">JavaScript</h3>
+      <section class="gallery-group  gallery-group--3">
+        <h3 class="visually-hidden">SPA</h3>
 
         <article class="gallery-item">
           <h4 class="gallery-item__name">Keksobooking</h4>
@@ -373,6 +372,7 @@
               <li class="gallery-item__hashtag-item">Функциональный стиль</li>
               <li class="gallery-item__hashtag-item">Модульность</li>
               <li class="gallery-item__hashtag-item">AJAX</li>
+              <li class="gallery-item__hashtag-item">SPA</li>
             </ul>
           </div>
         </article>
@@ -418,6 +418,7 @@
               <li class="gallery-item__hashtag-item">Функциональный стиль</li>
               <li class="gallery-item__hashtag-item">Модульность</li>
               <li class="gallery-item__hashtag-item">AJAX</li>
+              <li class="gallery-item__hashtag-item">SPA</li>
             </ul>
           </div>
         </article>
