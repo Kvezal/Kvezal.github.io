@@ -1,0 +1,29 @@
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__check {
+    display: none;
+  }
+
+  &__check:checked ~ &__info {
+    display: block;
+  }
+
+  &__link {
+    min-height: 150px;
+  }
+
+  &__subtitle {
+    @include clear-list();
+  }
+
+  &__hashtag-list {
+    @include clear-list();
+  }
+
+  &__info {
+    display: none;
+  }
+}

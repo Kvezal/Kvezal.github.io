@@ -1,0 +1,42 @@
+.social {
+  display: flex;
+  justify-content: center;
+  min-height: 80px;
+  margin: 0;
+
+  &__link {
+    display: block;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    margin: 10px 20px;
+
+    font-size: 0;
+    line-height: 0;
+
+    border-width: 3px;
+    border-style: solid;
+    border-color: $primary-color;
+    border-radius: 50%;
+  }
+
+  &__svg {
+    fill: $primary-color;
+
+    &--vk {
+      width: 50px;
+      height: 54px;
+    }
+
+    &--tg {
+      width: 40px;
+      height: 54px;
+      margin-left: 5px;
+    }
+
+    &--gh {
+      width: 54px;
+      height: 54px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.education {
+  margin-top: 35px;
+  padding-top: 35px;
+  padding-right: 20px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    font-size: 35px;
+  }
+
+  &__list {
+    @include clear-list();
+  }
+
+  &__item {
+    margin-top: 20px;
+  }
+
+  &__wrapper {
+    display: block;
+    margin-top: 10px;
+    max-width: 200px;
+    margin-left: 50%;
+
+    transform: translate(-50%);
+  }
+}
