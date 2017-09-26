@@ -1,14 +1,14 @@
 .gallery {
-
   margin-top: 35px;
   padding-top: 40px;
-  padding-bottom: 40px;
 
   &__title {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 
-    font-size: 35px;
+    @include font(34px, 55px);
+    text-align: center;
+    text-transform: uppercase;
   }
 
   &__control {
@@ -29,6 +29,7 @@
 
       font-size: 20px;
       text-align: center;
+      text-transform: uppercase;
     }
 
     &-radio-1:checked ~ .gallery__control &-label-1,
@@ -49,5 +50,56 @@
   &__group {
     display: none;
     padding: 20px;
+  }
+}
+
+@include MQ(M) {
+  .gallery {
+    margin-top: 45px;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 45px;
+
+    &__control {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__tab {
+      &-label {
+        box-sizing: border-box;
+        width: 33.3%;
+        min-height: 50px;
+        padding-top: 13px;
+        padding-right: 20px;
+        padding-bottom: 13px;
+        padding-left: 20px;
+
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      &-radio-1:checked ~ .gallery__control &-label-1,
+      &-radio-2:checked ~ .gallery__control &-label-2,
+      &-radio-3:checked ~ .gallery__control &-label-3 {
+        order: 0;
+
+        font-weight: 400;
+      }
+
+      &-radio-1:checked ~ .gallery__group--1,
+      &-radio-2:checked ~ .gallery__group--2,
+      &-radio-3:checked ~ .gallery__group--3 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px;
+      }
+    }
+
+    &__group {
+      align-items: flex-start;
+    }
   }
 }

@@ -1,5 +1,6 @@
 .main-nav {
   &__list {
+    box-sizing: border-box;
     @include clear-list();
   }
 
@@ -12,6 +13,8 @@
 
     @include font-set(700, 18px, 18px);
     text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
   }
 
   &__toggle {
@@ -32,13 +35,10 @@
 
     &__list {
       display: flex;
+      justify-content: space-between;
       width: 75%;
-      max-width: 900px;
+      max-width: 720px;
       align-items: center;
-    }
-
-    &__item {
-      width: 25%;
     }
 
     &__toggle {
@@ -52,8 +52,8 @@
     justify-content: center;
 
     &__list {
-      max-width: 900px;
-      margin-left: 200px;
+      width: 720px;
+      margin-left: 100px;
     }
 
   }
