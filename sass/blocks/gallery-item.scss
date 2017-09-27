@@ -6,12 +6,9 @@
   margin-bottom: 20px;
 
   &__name {
-    position: relative;
-
     margin: 0;
-    margin-bottom: -85px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     @include font-set(700, 28px, 45px);
     color: $secondary-color;
@@ -24,10 +21,6 @@
     min-height: 150px;
 
     font-size: 0;
-  }
-
-  &__hashtag-list {
-    @include clear-list();
   }
 
   &__check {
@@ -44,7 +37,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 200px;
+    min-height: 180px;
 
     background-color: transparentize($primary-color, .4);
   }
@@ -57,6 +50,10 @@
     display: none;
   }
 
+  &__hashtag-list {
+    @include clear-list();
+  }
+
   &__subtitle {
     @include clear-list();
   }
@@ -65,5 +62,16 @@
 @include MQ(M) {
   .gallery-item {
     width: 47.5%;
+
+    &__name {
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      @include font-set(700, 32px, 45px);
+    }
+
+    &__bottom {
+      min-height: 180px;
+    }
   }
 }
