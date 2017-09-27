@@ -92,7 +92,7 @@
       &-radio-2:checked ~ .gallery__group--2,
       &-radio-3:checked ~ .gallery__group--3 {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         flex-wrap: wrap;
         padding: 30px;
       }

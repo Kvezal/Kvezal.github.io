@@ -3,7 +3,6 @@
   flex-direction: column;
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 20px;
 
   &__name {
     margin: 0;
@@ -47,14 +46,14 @@
   }
 
   &__info {
+    box-sizing: border-box;
     display: none;
+    padding: 30px;
+
+    background-image: linear-gradient(180deg, transparentize($primary-color, .4), $primary-color);
   }
 
   &__hashtag-list {
-    @include clear-list();
-  }
-
-  &__subtitle {
     @include clear-list();
   }
 }
@@ -62,6 +61,8 @@
 @include MQ(M) {
   .gallery-item {
     width: 47.5%;
+    margin-right: auto;
+    margin-bottom: 20px;
 
     &__name {
       padding-top: 15px;
@@ -72,6 +73,40 @@
 
     &__bottom {
       min-height: 180px;
+    }
+
+    &__info {
+      position: relative;
+      top: 30px;
+
+      width: 210.65%;
+      margin-bottom: 20px;
+
+      &::before {
+        @include absolute-pseudo-element();
+
+        top: -30px;
+        left: 0;
+
+        width: 47.5%;
+        height: 30px;
+
+        background-color: transparentize($primary-color, .4);
+      }
+    }
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-of-type(2n) &__info {
+      left: -110.65%;
+      right: 0;
+
+      &::before {
+        right: 0;
+        left: auto;
+      }
     }
   }
 }
