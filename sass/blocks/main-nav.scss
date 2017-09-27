@@ -30,7 +30,7 @@
 @include MQ(M) {
   .main-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
 
     &__list {
@@ -39,6 +39,8 @@
       width: 75%;
       max-width: 720px;
       align-items: center;
+
+      margin-left: 8.3%;
     }
 
     &__toggle {

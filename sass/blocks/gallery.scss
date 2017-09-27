@@ -55,10 +55,15 @@
 
 @include MQ(M) {
   .gallery {
+    max-width: 1140px;
     margin-top: 45px;
     margin-right: 30px;
     margin-left: 30px;
     padding-top: 45px;
+
+    &__title {
+      margin-bottom: 70px;
+    }
 
     &__control {
       flex-direction: row;
@@ -101,5 +106,12 @@
     &__group {
       align-items: flex-start;
     }
+  }
+}
+
+@include MQ(L) {
+  .gallery {
+    margin-right: auto;
+    margin-left: auto;
   }
 }

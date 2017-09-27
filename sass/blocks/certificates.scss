@@ -13,3 +13,11 @@
     display: block;
   }
 }
+
+@include MQ(L) {
+  .certificates {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

@@ -39,8 +39,10 @@
 
 @include MQ(M) {
   .skills {
+    max-width: 1140px;
     margin-top: 45px;
     margin-right: 30px;
+    margin-bottom: 70px;
     margin-left: 30px;
     padding-top: 45px;
     padding-bottom: 45px;
@@ -53,5 +55,13 @@
     &__list {
       padding-left: 30px;
     }
+  }
+}
+
+@include MQ(L) {
+  .skills {
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
