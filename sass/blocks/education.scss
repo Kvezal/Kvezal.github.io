@@ -5,6 +5,12 @@
   padding-bottom: 35px;
   padding-left: 20px;
 
+  background-color: transparentize($third-color, .7);
+  border: 2px solid transparentize($third-color, .65);
+  border-radius: 20px;
+  box-shadow: 0 0 15px transparentize($third-color, 0),
+    inset 0 0 15px transparentize($third-color, .5);
+
   &__title {
     margin-top: 0;
     margin-bottom: 35px;
@@ -20,6 +26,8 @@
 
   &__item {
     margin-top: 20px;
+
+    @include font(16px, 26px);
   }
 }
 
@@ -31,11 +39,15 @@
     margin-right: 30px;
     margin-left: 30px;
     padding-top: 45px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
 
     &__title {
       margin-bottom: 70px;
+    }
+
+    &__item {
+      @include font(17px, 27.5px);
     }
   }
 }
@@ -44,5 +56,9 @@
   .education {
     margin-left: auto;
     margin-right: auto;
+
+    &__item {
+      @include font(18px, 29px);
+    }
   }
 }

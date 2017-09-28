@@ -11,6 +11,14 @@
 
   &__link {
     display: block;
+
+    @include font(0, 0);
+
+  }
+
+  &__img {
+    border-radius: 10px;
+    border: 2px solid $fourth-color;
   }
 }
 
@@ -19,5 +27,14 @@
     width: 70%;
     margin-right: auto;
     margin-left: auto;
+
+    &__img {
+      filter: sepia(100%);
+      transition-duration: 150ms;
+
+      &:hover {
+        filter: none;
+      }
+    }
   }
 }
