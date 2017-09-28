@@ -3,9 +3,17 @@
   .page-header {
     min-height: 400px;
 
-    background-image: url(../img/header-background-tablet@1x.jpg);
+    background-image: url(../img/header-background@1x.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+
+
+    box-shadow: 0 5px 15px transparentize($third-color, .5);
+
+    @include retina {
+      background-image: url(../img/header-background@2x.jpg);
+    }
   }
 }
 
@@ -13,7 +21,7 @@
   .page-header {
     min-height: 500px;
 
-    background-image: url(../img/header-background-desk@1x.jpg)
+    box-shadow: 0 5px 15px transparentize($third-color, .5);
   }
 }
 

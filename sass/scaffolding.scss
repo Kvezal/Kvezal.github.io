@@ -3,7 +3,7 @@ body {
 
   font-family: $font-primary;
   color: $fifth-color;
-  background-image: repeating-linear-gradient(135deg, rgba($secondary-color, .5) 5px, rgba($third-color, .5) 6px, rgba($secondary-color, .5) 7px, rgba($secondary-color, .5) 12px);
+  background-image: repeating-linear-gradient(135deg, transparentize($secondary-color, .5) 5px, transparentize($third-color, .5) 6px, transparentize($secondary-color, .5) 7px, transparentize($secondary-color, .5) 12px);
 }
 
 img {
