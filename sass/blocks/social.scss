@@ -4,6 +4,9 @@
   min-height: 80px;
   margin: 0;
 
+  background-color: transparentize($third-color, .4);
+  box-shadow: 0 -2px 3px $third-color;
+
   &__link {
     display: block;
     box-sizing: border-box;
