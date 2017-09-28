@@ -158,6 +158,10 @@
         &::after {
           display: none;
         }
+
+        &:hover {
+          font-weight: 700;
+        }
       }
 
       &-radio-1:checked ~ .gallery__control &-label-1,
@@ -165,7 +169,7 @@
       &-radio-3:checked ~ .gallery__control &-label-3 {
         order: 0;
 
-        font-weight: 400;
+        font-weight: 700;
       }
 
       &-radio-1:checked ~ .gallery__group--1,

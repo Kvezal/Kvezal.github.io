@@ -40,6 +40,13 @@
 
     & ~ .gallery-item__bottom {
       border-radius: 0;
+
+      & .gallery-item__btn {
+
+        &::before {
+          opacity: 1;
+        }
+      }
     }
   }
 
@@ -54,10 +61,6 @@
     background-color: transparentize($primary-color, .4);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-  }
-
-  &__btn {
-    margin-bottom: 20px;
   }
 
   &__info {
@@ -156,6 +159,10 @@
     &__bottom {
       position: absolute;
       top: 349px;
+
+      box-sizing: border-box;
+      justify-content: flex-start;
+      padding-top: 20px;
 
       opacity: 0;
       visibility: hidden;

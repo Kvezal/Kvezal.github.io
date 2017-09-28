@@ -19,6 +19,13 @@
   &__img {
     border-radius: 10px;
     border: 2px solid $fourth-color;
+    filter: sepia(100%);
+
+    transition-duration: .3s;
+
+    &:hover {
+      filter: none;
+    }
   }
 }
 
@@ -27,14 +34,5 @@
     width: 70%;
     margin-right: auto;
     margin-left: auto;
-
-    &__img {
-      filter: sepia(100%);
-      transition-duration: .3s;
-
-      &:hover {
-        filter: none;
-      }
-    }
   }
 }

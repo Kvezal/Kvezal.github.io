@@ -65,7 +65,8 @@
     justify-content: center;
     padding: 10px;
 
-    background-color: transparentize($primary-color, .35);
+    background-color: transparentize($third-color, .4);
+    box-shadow: 0 2px 3px $third-color;
 
     &__list {
       display: flex;
@@ -78,9 +79,38 @@
     }
 
     &__link {
+      position: relative;
 
       background-color: transparent;
       border: none;
+
+      transition-duration: .2s;
+
+      &::before {
+        @include absolute-pseudo-element();
+        top: 80%;
+        left: 50%;
+
+        display: block;
+        width: 0%;
+        height: 3px;
+
+        background-color: $primary-color;
+
+        transform: translateX(-50%);
+        transition-duration: .3s;
+      }
+
+      &:hover {
+        color: $secondary-color;
+
+        &::before {
+          width: 100%;
+          height: 3px;
+
+          background-color: $secondary-color;
+        }
+      }
     }
 
     &__toggle {
@@ -97,6 +127,8 @@
       width: 720px;
       margin-left: 100px;
     }
+
+
 
   }
 }
