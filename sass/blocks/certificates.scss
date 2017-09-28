@@ -30,7 +30,7 @@
 
     &__img {
       filter: sepia(100%);
-      transition-duration: 150ms;
+      transition-duration: .3s;
 
       &:hover {
         filter: none;
