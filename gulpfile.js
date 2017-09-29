@@ -121,7 +121,7 @@ gulp.task('js:update', ['js:copy', 'compress'], function (done) {
 });
 
 gulp.task('deploy', function () {
-  del('build');
+  del('.publish');
   return gulp.src('build/**/*')
     .pipe(ghPages());
 });
