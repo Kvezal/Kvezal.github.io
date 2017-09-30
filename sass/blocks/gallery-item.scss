@@ -68,6 +68,9 @@
     display: none;
     padding: 30px;
 
+    line-height: 26px;
+    text-align: justify;
+
     background-image: linear-gradient(180deg, transparentize($primary-color, .4), $primary-color);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -75,7 +78,30 @@
 
   &__hashtag-list {
     @include clear-list();
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
+
+  &__hashtag-item {
+    flex-grow: 1;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 5px 5px;
+
+    @include font(16px, 16px);
+    color: $secondary-color;
+    text-align: center;
+
+    background-color: $primary-color;
+    border-radius: 7px;
+  }
+
+  &__description {
+    margin-bottom: 0;
+  }
+
 }
 
 @include MQ(M) {
