@@ -36,6 +36,10 @@
 
     transform: translateX(-50%);
 
+    &--nojs {
+      display: none;
+    }
+
     &::before,
     &::after {
       @include absolute-pseudo-element();
