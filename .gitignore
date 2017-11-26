@@ -20,4 +20,5 @@ Thumbs.db
 build/
 build/
 .publish/
+package-lock.json
 
