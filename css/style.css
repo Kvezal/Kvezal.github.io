@@ -821,6 +821,7 @@ a {
 
 .certificates__item {
   width: 30%;
+  margin-bottom: 20px;
 }
 
 .certificates__link {
